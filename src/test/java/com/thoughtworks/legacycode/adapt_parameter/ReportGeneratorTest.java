@@ -1,17 +1,17 @@
 package com.thoughtworks.legacycode.adapt_parameter;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class ReportGeneratorTest {
+class ReportGeneratorTest {
 
 //  Adapt Parameter
 
-//  Use adapter pattern on tough dependency
+// Use adapter pattern on tough dependency
 //
 // Wrap the console parameter in a new class that we can then mock
 
     @Test
-    public void shouldPrintConsoleInputSomething() {
+    void should_print_transformed_input_to_console() {
         ReportGenerator reportGenerator = new ReportGenerator();
 
         // Change
